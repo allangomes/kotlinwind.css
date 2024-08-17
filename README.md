@@ -38,7 +38,7 @@ implementation("io.github.allangomessl:kotlinwind-css:{VERSION}")
 
 ## Documentation
 - Core
-  - [colors](https://github.com/allangomessl/kotlinwind-css/edit/dev/README.md#colors)
+  - [colors](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#colors)
 - Features
   - [background](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#background)
   - [border](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#border)

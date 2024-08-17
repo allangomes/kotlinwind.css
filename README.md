@@ -43,11 +43,11 @@ This version improves clarity, enhances the structure, and adds more context to 
 - Core
   - [colors](https://github.com/allangomessl/kotlinwind-css/edit/dev/README.md#colors)
 - Features
-  - [background](https://github.com/allangomessl/kotlinwind-css/edit/dev/README.md#background)
-  - [border](https://github.com/allangomessl/kotlinwind-css/edit/dev/README.md#border)
-  - [box](https://github.com/allangomessl/kotlinwind-css/edit/dev/README.md#box)
-  - [font](https://github.com/allangomessl/kotlinwind-css/edit/dev/README.md#font)
-  - [text](https://github.com/allangomessl/kotlinwind-css/edit/dev/README.md#text)
+  - [background](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#background)
+  - [border](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#border)
+  - [box](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#box)
+  - [font](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#font)
+  - [text](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#text)
 
 ### Colors
 ```kotlin

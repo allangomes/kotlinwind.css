@@ -32,7 +32,7 @@ Kotlinwind CSS is useful for developers who prefer Kotlin's type-safe, declarati
 To include Kotlinwind CSS in your project, add the following dependency to your `build.gradle.kts` file:
 
 ```kotlin
-implementation("io.github.allangomessl:kotlinwind-css:0.0.1")
+implementation("io.github.allangomessl:kotlinwind-css:{VERSION}")
 ```
 
 

@@ -9,6 +9,7 @@
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9.24-blue.svg?style=flat&logo=kotlin)](https://kotlinlang.org)
 [![Maven Central Version](https://img.shields.io/maven-central/v/io.github.allangomessl/kotlinwind-css)](https://search.maven.org/artifact/io.github.allangomessl/kotlinwind-css)
+[![Tests](https://github.com/allangomessl/kotlinwind-css/actions/workflows/on-push.yml/badge.svg?branch=dev&event=push)](https://github.com/allangomessl/kotlinwind-css/actions/workflows/on-push.yml)
 
 ## Overview
 

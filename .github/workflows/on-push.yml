@@ -20,5 +20,5 @@ jobs:
       - name: Test
         run: ./gradlew test
 
-      - name: Test
-        run: ./gradlew koverXmlReport
+      - name: Coverage
+        run: ./gradlew koverHtmlReport

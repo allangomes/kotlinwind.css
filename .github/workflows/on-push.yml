@@ -1,4 +1,4 @@
-name: Measure coverage
+name: Tests
 
 on:
   push:
@@ -19,3 +19,6 @@ jobs:
 
       - name: Test
         run: ./gradlew test
+
+      - name: Test
+        run: ./gradlew koverXmlReport

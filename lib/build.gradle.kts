@@ -5,12 +5,8 @@ import com.vanniktech.maven.publish.SonatypeHost
 plugins {
     alias(libs.plugins.jvm)
     alias(libs.plugins.dokka)
-    id("com.vanniktech.maven.publish") version "0.29.0"
-}
-
-repositories {
-    mavenCentral()
-    mavenLocal()
+    alias(libs.plugins.publisher)
+    alias(libs.plugins.kover)
 }
 
 dependencies {

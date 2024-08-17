@@ -35,10 +35,6 @@ To include Kotlinwind CSS in your project, add the following dependency to your 
 implementation("io.github.allangomessl:kotlinwind-css:0.0.1")
 ```
 
----
-
-This version improves clarity, enhances the structure, and adds more context to the different sections, making it easier for users to understand the purpose and usage of the library.
-
 
 ## Documentation
 - Core

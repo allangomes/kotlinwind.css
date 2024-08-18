@@ -8,191 +8,64 @@
 
 ## Overview
 
-Kotlinwind CSS is a Kotlin library that simplifies styling HTML when using [kotlinx.html](https://github.com/Kotlin/kotlinx.html). This library enables a more streamlined and Kotlin-friendly approach to applying CSS styles directly in your HTML-building code.
+Kotlinwind CSS is a Kotlin library that enhances your experience with [kotlinx.html](https://github.com/Kotlin/kotlinx.html) by providing a more Kotlin-centric approach to styling HTML. Inspired by Tailwind CSS, this library allows you to apply CSS styles directly within your HTML-building code, utilizing Kotlin's type-safe, declarative syntax through a Kotlin DSL (Domain-Specific Language).
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b3310eeb-83f6-41b0-97ec-e39fbe8c1c8e" alt="Demonstration" />
 </p>
 
+## Features
+
+- **Type-Safe CSS**: Write CSS directly in Kotlin using a type-safe API.
+- **Seamless Integration**: Designed to work smoothly with `kotlinx.html`.
+- **Declarative Syntax**: Benefit from Kotlin's expressive DSL to manage styles inline, reducing the need for external stylesheets.
+- **Inspired by Tailwind CSS**: Leverage a similar utility-first approach for styling, now available in Kotlin.
+
 ## Code Preview
 
-| Code Snippet    | Preview |
+| Kotlinwind CSS Code | Resulting HTML |
 | -------- | ------- |
 | <img width="704" alt="Screenshot 2024-08-17 at 13 00 49" src="https://github.com/user-attachments/assets/12bc1408-f78f-4127-9e06-7e9985f08719"> | <img width="315" alt="Screenshot 2024-08-17 at 10 56 55" src="https://github.com/user-attachments/assets/dad10d8a-6ffd-4469-80bf-721da7e33290">  |
 
-
 ## Motivation
 
-Kotlinwind CSS is useful for developers who prefer Kotlin's type-safe, declarative syntax while styling HTML with `kotlinx.html`. It provides a more intuitive and integrated way to manage styles without relying on traditional CSS or external stylesheets.
+Kotlinwind CSS is built for developers who prefer a Kotlin-native way of styling HTML. By leveraging Kotlin's type-safe, declarative DSL and drawing inspiration from the utility-first approach of Tailwind CSS, this library eliminates the need for traditional CSS files and provides a more cohesive development experience within Kotlin projects.
 
+## Getting Started
 
-## Installation
-
-To include Kotlinwind CSS in your project, add the following dependency to your `build.gradle.kts` file:
+To start using Kotlinwind CSS in your project, add the following dependency to your `build.gradle.kts` file:
 
 ```kotlin
 implementation("io.github.allangomessl:kotlinwind-css:{VERSION}")
 ```
 
+Replace `{VERSION}` with the latest version available on [Maven Central](https://search.maven.org/artifact/io.github.allangomessl/kotlinwind-css).
 
 ## Documentation
-- Core
-  - [colors](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#colors)
-- Features
-  - [background](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#background)
-  - [border](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#border)
-  - [box](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#box)
-  - [font](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#font)
-  - [text](https://github.com/allangomessl/kotlinwind-css?tab=readme-ov-file#text)
 
-### Colors
-```kotlin
-white
-black
-color_inherit
-color_current
-transparent
-slate   [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-gray    [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-zinc    [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-neutral [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-stone   [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-red     [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-orange  [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-amber   [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-yellow  [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-lime    [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-green   [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-emerald [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-teal    [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-cyan    [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-sky     [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-blue    [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-indigo  [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-violet  [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-purple  [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-fuchsia [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-pink    [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
-rose    [I50, I100, I200, I300, I400, I500, I600, I700, I800, I900, I950]
+For detailed usage instructions and examples, visit the [Wiki](https://github.com/allangomessl/kotlinwind-css/wiki).
 
-//example
-kw.inline { background.red[I500] } //background-color: #EF4444
-```
+## Limitations
 
-### Background
-```kotlin
-blue[I500]                        // background-color: #EF4444;
-...see more in colors
+Currently, Kotlinwind CSS supports only inline styles. Future versions will introduce support for external stylesheets and CSS classes.
 
-image[IMAGE_URL]                  // background-image: url('IMAGE_URL')
-image_none                        // background-image: none
+## Roadmap
 
-origin_border                     // background-origin: border-box
-origin_padding                    // background-origin: padding-box
-origin_content                    // background-origin: content-box
+- **0.0.2 - 0.0.9**
+  - Grid Layout
+  - Table Styling
+  - SVG Styling
+  - CSS Transforms
 
-bottom                            // background-position: bottom;
-center                            // background-position: center;
-left                              // background-position: left;
-left_bottom                       // background-position: left bottom;
-left_top                          // background-position: left top;
-right                             // background-position: right;
-right_bottom                      // background-position: right bottom;
-right_top                         // background-position: right top;
-top                               // background-position: top;
+- **0.1.0 - 0.1.9**
+  - Class-based Styling
+  - `@media` Queries Support
 
-repeat                            // background-repeat: repeat;
-no_repeat                         // background-repeat: no-repeat;
-repeat_x                          // background-repeat: repeat-x;
-repeat_y                          // background-repeat: repeat-y;
-repeat_round                      // background-repeat: round;
-repeat_space                      // background-repeat: space;
+- **Future Plans**
+  - Kotlin Multiplatform Support
+    - Jetpack Compose Integration (returning a `Modifier`)
+  - Interactivity Support (JS/TS Framework Integration)
 
-auto                              // background-size: auto;
-cover                             // background-size: cover;
-contain                           // background-size: contain;
+### Note
 
-//example: 
-kw.inline { background.blue[I500].image[IMAGE_URL].origin_padding.center.no_repeat.auto }
-```
-
-### Border
-```kotlin
-// border color
-___________________________________________________________________________
-gray[I200]                        // border-color: #E5E7EB;
-...see more in colors
-___________________________________________________________________________
-
-// border radius
-___________________________________________________________________________
-rounded[SIZE]                     // border-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_s[SIZE]                   // border-start-start-radius: {SIZE}rem
-                                  // border-end-start-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_e[SIZE]                   // border-start-end-radius: {SIZE}rem
-                                  // border-end-end-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_t[SIZE]                   // border-top-left-radius: {SIZE}rem
-                                  // border-top-right-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_r[SIZE]                   // border-top-right-radius: {SIZE}rem
-                                  // border-bottom-right-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_r[SIZE]                   // border-bottom-right-radius: {SIZE}rem
-                                  // border-bottom-left-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_l[SIZE]                   // border-top-left-radius: {SIZE}rem
-                                  // border-bottom-left-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_ss[SIZE]                  // border-start-start-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_se[SIZE]                  // border-start-end-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_ee[SIZE]                  // border-end-end-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_es[SIZE]                  // border-end-start-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_ee[SIZE]                  // border-end-end-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_tl[SIZE]                  // border-top-left-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_tr[SIZE]                  // border-top-right-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_br[SIZE]                  // border-bottom-right-radius: {SIZE}rem
-___________________________________________________________________________
-rounded_bl[SIZE]                  // border-bottom-left-radius: {SIZE}rem
-___________________________________________________________________________
-
-// border width
-___________________________________________________________________________
-all[SIZE]                         // border-width: {SIZE}px
-___________________________________________________________________________
-x[SIZE]                           // border-left-width: {SIZE}px
-                                  // border-right-width: {SIZE}px
-___________________________________________________________________________
-y[SIZE]                           // border-top-width: {SIZE}px
-                                  // border-bottom-width: {SIZE}px
-___________________________________________________________________________
-start[SIZE]                       // border-inline-start-width: {SIZE}px
-___________________________________________________________________________
-end[SIZE]                         // border-inline-end-width: {SIZE}px
-___________________________________________________________________________
-top[SIZE]                         // border-top-width: {SIZE}px
-___________________________________________________________________________
-right[SIZE]                       // border-right-width: {SIZE}px
-___________________________________________________________________________
-bottom[SIZE]                      // border-bottom-width: {SIZE}px
-___________________________________________________________________________
-left[SIZE]                        // border-left-width: {SIZE}px
-___________________________________________________________________________
-```
-
-### Box
-
-### Font
-
-### Text
-
-
+Interactivity is not a priority at this stage, as starting with a JS/TS framework may be more beneficial for projects requiring dynamic behavior.

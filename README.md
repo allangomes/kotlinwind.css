@@ -1,8 +1,3 @@
-
-
-
-
-
 ![Kotlinwind Banner](https://github.com/user-attachments/assets/5a28c38a-c7a2-4626-b58f-e9f2b1f312b1)
 
 # Kotlinwind CSS
@@ -14,6 +9,10 @@
 ## Overview
 
 Kotlinwind CSS is a Kotlin library that simplifies styling HTML when using [kotlinx.html](https://github.com/Kotlin/kotlinx.html). This library enables a more streamlined and Kotlin-friendly approach to applying CSS styles directly in your HTML-building code.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b3310eeb-83f6-41b0-97ec-e39fbe8c1c8e" alt="Demonstration" />
+</p>
 
 ## Code Preview
 

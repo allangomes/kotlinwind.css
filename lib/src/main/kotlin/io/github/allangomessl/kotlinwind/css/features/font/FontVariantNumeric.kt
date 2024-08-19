@@ -4,6 +4,7 @@ import io.github.allangomessl.kotlinwind.css.api.KWScope
 import io.github.allangomessl.kotlinwind.css.core.FONT_VARIANT_NUMERIC
 import io.github.allangomessl.kotlinwind.css.core.StyleValueMarker
 
+@Suppress("PropertyName")
 interface FontVariantNumeric<T> : KWScope<T> {
 
   /**

@@ -7,7 +7,7 @@ import io.github.allangomessl.kotlinwind.css.extensions.inline
 import io.github.allangomessl.kotlinwind.css.features.background.Background
 import io.github.allangomessl.kotlinwind.css.features.border.Border
 import io.github.allangomessl.kotlinwind.css.features.box.Box
-import io.github.allangomessl.kotlinwind.css.features.decoration.TextDecoration
+import io.github.allangomessl.kotlinwind.css.features.text_decoration.TextDecoration
 import io.github.allangomessl.kotlinwind.css.features.flex.Flex
 import io.github.allangomessl.kotlinwind.css.features.font.Font
 import io.github.allangomessl.kotlinwind.css.features.grid.Grid

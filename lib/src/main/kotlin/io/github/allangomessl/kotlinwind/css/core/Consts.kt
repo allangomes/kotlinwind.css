@@ -46,7 +46,7 @@ const val DISPLAY = "display"
 const val FLOAT = "float"
 const val FONT_FAMILY = "font-family"
 const val FONT_SIZE = "font-size"
-const val FONT_STYLE = "font-inline"
+const val FONT_STYLE = "font-style"
 const val FONT_VARIANT_NUMERIC = "font-variant-numeric"
 const val FONT_WEIGHT = "font-weight"
 

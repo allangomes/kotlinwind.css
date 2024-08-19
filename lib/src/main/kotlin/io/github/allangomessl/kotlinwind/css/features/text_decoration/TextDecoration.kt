@@ -1,4 +1,4 @@
-package io.github.allangomessl.kotlinwind.css.features.decoration
+package io.github.allangomessl.kotlinwind.css.features.text_decoration
 
 import io.github.allangomessl.kotlinwind.css.api.KWRoot
 import io.github.allangomessl.kotlinwind.css.api.KWScope

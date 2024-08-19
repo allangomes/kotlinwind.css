@@ -100,4 +100,7 @@ class Margin(kw: KWRoot) :
     MARGIN_LEFT value getValue(it)
   })
 
+  operator fun get(value: Token.Margin) = all[value]
+  operator fun get(value: Float) = all[value]
+  operator fun get(value: Int) = all[value]
 }

@@ -62,7 +62,7 @@ object XL2 : Token<XL2>({
 @StyleValueMarker
 object XL3 : Token<XL3>({
   border_radius[it] = "1.5rem"
-  font_size[it] = "2.25rem"
+  font_size[it] = "1.875rem"
   line_height[it] = "2.25rem"
   margin[it] = "2.5rem"
   padding[it] = "2.5rem"

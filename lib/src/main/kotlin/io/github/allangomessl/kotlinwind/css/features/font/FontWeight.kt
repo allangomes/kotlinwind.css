@@ -1,3 +1,5 @@
+@file:Suppress("PropertyName")
+
 package io.github.allangomessl.kotlinwind.css.features.font
 
 import io.github.allangomessl.kotlinwind.css.api.KWScope

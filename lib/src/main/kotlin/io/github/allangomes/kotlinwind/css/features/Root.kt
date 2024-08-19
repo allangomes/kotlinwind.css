@@ -15,6 +15,7 @@ import io.github.allangomes.kotlinwind.css.features.sizing.Sizing
 import io.github.allangomes.kotlinwind.css.features.text.Text
 import io.github.allangomes.kotlinwind.css.features.text_decoration.TextDecoration
 
+typealias StyleBuilder = Root.() -> Unit
 
 class Root : KWRoot,
   AspectRatio<KWRoot>,
@@ -90,6 +91,10 @@ class Root : KWRoot,
   @StyleKeyMarker
   val no_decoration: Unit get() {
     TextDecoration(this, "none")
+  }
+
+  operator fun StyleBuilder?.unaryPlus() {
+    this?.invoke(this@Root)
   }
 
 }

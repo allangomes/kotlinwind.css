@@ -24,9 +24,9 @@ mavenPublishing {
     ))
 
     coordinates(
-        groupId = "io.github.allangomes",
-        artifactId = "kotlinwind-css",
-        version = "0.0.1"
+        groupId = rootProject.group as String,
+        artifactId = rootProject.name,
+        version = rootProject.version as String
     )
 
     pom {

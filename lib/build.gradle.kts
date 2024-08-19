@@ -24,7 +24,7 @@ mavenPublishing {
     ))
 
     coordinates(
-        groupId = "io.github.allangomessl",
+        groupId = "io.github.allangomes",
         artifactId = "kotlinwind-css",
         version = "0.0.1"
     )
@@ -33,7 +33,7 @@ mavenPublishing {
         name.set("Kotlinwind CSS")
         description.set("HTML styling inspired on tailwind.css")
         inceptionYear.set("2024")
-        url.set("https://github.com/allangomessl/kotlinwind-css/")
+        url.set("https://github.com/allangomes/kotlinwind-css/")
         licenses {
             license {
                 name.set("The Apache License, Version 2.0")
@@ -43,15 +43,15 @@ mavenPublishing {
         }
         developers {
             developer {
-                id.set("allangomessl")
+                id.set("allangomes")
                 name.set("Allan Gomes")
-                url.set("https://github.com/allangomessl/")
+                url.set("https://github.com/allangomes/")
             }
         }
         scm {
-            url.set("https://github.com/allangomessl/kotlinwind-css/")
-            connection.set("scm:git:git://github.com/allangomessl/kotlinwind-css.git")
-            developerConnection.set("scm:git:ssh://git@github.com/allangomessl/kotlinwind-css.git")
+            url.set("https://github.com/allangomes/kotlinwind-css/")
+            connection.set("scm:git:git://github.com/allangomes/kotlinwind-css.git")
+            developerConnection.set("scm:git:ssh://git@github.com/allangomes/kotlinwind-css.git")
         }
     }
 

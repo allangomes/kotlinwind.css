@@ -3,8 +3,8 @@
 # Kotlinwind CSS
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9.24-blue.svg?style=flat&logo=kotlin)](https://kotlinlang.org)
-[![Maven Central Version](https://img.shields.io/maven-central/v/io.github.allangomessl/kotlinwind-css)](https://search.maven.org/artifact/io.github.allangomessl/kotlinwind-css)
-[![Tests](https://github.com/allangomessl/kotlinwind-css/actions/workflows/on-push.yml/badge.svg?branch=dev&event=push)](https://github.com/allangomessl/kotlinwind-css/actions/workflows/on-push.yml)
+[![Maven Central Version](https://img.shields.io/maven-central/v/io.github.allangomes/kotlinwind-css)](https://search.maven.org/artifact/io.github.allangomes/kotlinwind-css)
+[![Tests](https://github.com/allangomes/kotlinwind-css/actions/workflows/on-push.yml/badge.svg?branch=dev&event=push)](https://github.com/allangomes/kotlinwind-css/actions/workflows/on-push.yml)
 
 <br/><br/>
 
@@ -46,16 +46,16 @@ Kotlinwind CSS is built for developers who prefer a Kotlin-native way of styling
 To start using Kotlinwind CSS in your project, add the following dependency to your `build.gradle.kts` file:
 
 ```kotlin
-implementation("io.github.allangomessl:kotlinwind-css:{VERSION}")
+implementation("io.github.allangomes:kotlinwind-css:{VERSION}")
 ```
 
-Replace `{VERSION}` with the latest version available on [Maven Central](https://search.maven.org/artifact/io.github.allangomessl/kotlinwind-css).
+Replace `{VERSION}` with the latest version available on [Maven Central](https://search.maven.org/artifact/io.github.allangomes/kotlinwind-css).
 
 <br/><br/>
 
 ## Documentation
 
-For detailed usage instructions and examples, visit the [Wiki](https://github.com/allangomessl/kotlinwind-css/wiki).
+For detailed usage instructions and examples, visit the [Wiki](https://github.com/allangomes/kotlinwind-css/wiki).
 
 <br/><br/>
 

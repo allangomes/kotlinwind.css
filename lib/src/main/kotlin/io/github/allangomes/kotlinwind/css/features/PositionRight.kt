@@ -3,7 +3,7 @@ package io.github.allangomes.kotlinwind.css.features
 import io.github.allangomes.kotlinwind.css.api.KWScope
 import io.github.allangomes.kotlinwind.css.core.RIGHT
 import io.github.allangomes.kotlinwind.css.core.StyleValueMarker
-import io.github.allangomes.kotlinwind.css.core.WithFloatAndInt
+import io.github.allangomes.kotlinwind.css.core.WithNumber
 import io.github.allangomes.kotlinwind.css.core.WithPercentual
 
 @Suppress("PropertyName")
@@ -13,8 +13,8 @@ interface PositionRight<T> : KWScope<T> {
    * right: {number} * 0.25rem;
    */
   @StyleValueMarker
-  val right: WithFloatAndInt<T>
-    get() = WithFloatAndInt {
+  val right: WithNumber<T>
+    get() = WithNumber {
       val value = it * 0.25
       RIGHT value "${value}rem"
     }

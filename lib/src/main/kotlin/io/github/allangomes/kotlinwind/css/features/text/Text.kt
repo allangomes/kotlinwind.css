@@ -7,4 +7,5 @@ class Text(kw: KWRoot)
   : KWScope.Scoped<Text>(kw),
   TextAlign<Text>,
   TextAlignVertical<Text>,
-  TextColor<Text>
+  TextColor<Text>,
+  TextWhitespace<Text>

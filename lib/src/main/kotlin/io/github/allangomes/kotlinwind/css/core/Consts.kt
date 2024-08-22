@@ -66,6 +66,12 @@ const val MARGIN_TOP = "margin-top"
 const val MARGIN_BOTTOM = "margin-bottom"
 const val MARGIN_INLINE_START = "margin-inline-start"
 const val MARGIN_INLINE_END = "margin-inline-end"
+const val MASK_IMAGE = "mask-image"
+const val MASK_ORIGIN = "mask-origin"
+const val MASK_POSITION = "mask-position"
+const val MASK_REPEAT = "mask-repeat"
+const val MASK_SIZE = "mask-size"
+
 
 const val MAX_HEIGHT = "max-height"
 const val MAX_WIDTH = "max-width"
@@ -85,10 +91,13 @@ const val JUSTIFY_SELF = "justify-self"
 const val GAP = "gap"
 const val GAP_COLUMN = "column-gap"
 const val GAP_ROW = "row-gap"
+const val GRID = "grid"
+const val GRID_TEMPLATE_COLUMNS = "grid-template-columns"
 
 const val ORDER = "order"
 const val OBJECT_FIT = "object-fit"
 const val OBJECT_POSITION = "object-position"
+const val OPACITY = "opacity"
 
 const val PADDING = "padding"
 const val PADDING_LEFT = "padding-left"
@@ -111,4 +120,6 @@ const val TOP = "top"
 
 const val VERTICAL_ALIGN = "vertical-align"
 
+const val WEBKIT = "-webkit-"
 const val WIDTH = "width"
+const val WHITE_SPACE = "white-space"

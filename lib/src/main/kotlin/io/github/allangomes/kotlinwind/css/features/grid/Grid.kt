@@ -12,4 +12,5 @@ class Grid(kw: KWRoot) :
   JustifyContent<Grid>,
   JustifyItems<Grid>,
   JustifySelf<Grid>,
-  Order<Grid>
+  Order<Grid>,
+  GridTemplateColumns<Grid>

@@ -2,10 +2,7 @@ package io.github.allangomes.kotlinwind.css.features.font
 
 import io.github.allangomes.kotlinwind.css.api.KWScope
 import io.github.allangomes.kotlinwind.css.config.Theme
-import io.github.allangomes.kotlinwind.css.core.FONT_SIZE
-import io.github.allangomes.kotlinwind.css.core.LINE_HEIGHT
-import io.github.allangomes.kotlinwind.css.core.StyleValueMarker
-import io.github.allangomes.kotlinwind.css.core.WithTokenAndNumber
+import io.github.allangomes.kotlinwind.css.core.*
 import io.github.allangomes.kotlinwind.css.core.tokens.Token
 import io.github.allangomes.kotlinwind.css.features.commom.Size
 
@@ -33,6 +30,12 @@ interface FontSize<T> : KWScope<T>, Size<T> {
     val size = base + (it * 0.125)
     FONT_SIZE value "${size}rem"
     LINE_HEIGHT value "${size}rem"
+  })
+
+  @StyleValueMarker
+  val px: WithInt<T> get() = WithInt({
+    FONT_SIZE value "${it}px"
+    LINE_HEIGHT value "1"
   })
 
   @StyleValueMarker

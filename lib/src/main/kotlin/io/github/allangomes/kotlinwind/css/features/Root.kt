@@ -10,6 +10,7 @@ import io.github.allangomes.kotlinwind.css.features.flex.Flex
 import io.github.allangomes.kotlinwind.css.features.font.Font
 import io.github.allangomes.kotlinwind.css.features.grid.Grid
 import io.github.allangomes.kotlinwind.css.features.margin.Margin
+import io.github.allangomes.kotlinwind.css.features.mask.Mask
 import io.github.allangomes.kotlinwind.css.features.padding.Padding
 import io.github.allangomes.kotlinwind.css.features.sizing.Sizing
 import io.github.allangomes.kotlinwind.css.features.text.Text
@@ -18,25 +19,26 @@ import io.github.allangomes.kotlinwind.css.features.text_decoration.TextDecorati
 typealias StyleBuilder = Root.() -> Unit
 
 class Root : KWRoot,
-  AspectRatio<KWRoot>,
-  BreakAfter<KWRoot>,
-  BreakBefore<KWRoot>,
-  Clear<KWRoot>,
-  Display<KWRoot>,
-  Floats<KWRoot>,
-  ObjectFit<KWRoot>,
-  ObjectPosition<KWRoot>,
-  Position<KWRoot>,
-  PositionBottom<KWRoot>,
-  PositionInset<KWRoot>,
-  PositionLeft<KWRoot>,
-  PositionRight<KWRoot>,
-  PositionTop<KWRoot>,
-  Sizing<KWRoot>
+  AspectRatio<Root>,
+  BreakAfter<Root>,
+  BreakBefore<Root>,
+  Clear<Root>,
+  Display<Root>,
+  Floats<Root>,
+  ObjectFit<Root>,
+  ObjectPosition<Root>,
+  Opacity<Root>,
+  Position<Root>,
+  PositionBottom<Root>,
+  PositionInset<Root>,
+  PositionLeft<Root>,
+  PositionRight<Root>,
+  PositionTop<Root>,
+  Sizing<Root>
 {
   private val styles: MutableList<Style> = mutableListOf()
 
-  override fun String.value(value: String): KWRoot {
+  override fun String.value(value: String): Root {
     append(Style(this, value))
     return this@Root
   }
@@ -51,6 +53,9 @@ class Root : KWRoot,
 
   @StyleKeyMarker
   val background: Background get() = Background(this)
+
+  @StyleKeyMarker
+  val mask: Mask get() = Mask(this)
 
   @StyleKeyMarker
   val border: io.github.allangomes.kotlinwind.css.features.border.Border

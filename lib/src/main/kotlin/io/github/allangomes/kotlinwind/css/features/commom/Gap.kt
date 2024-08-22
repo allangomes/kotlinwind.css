@@ -11,7 +11,7 @@ interface Gap<T> : KWScope<T> {
   /** gap: {number} * 0.25rem
    * - [documentation](https://tailwindcss.com/docs/gap)
    * */
-  val gap: WithFloatAndInt<T> get() = WithFloatAndInt {
+  val gap: WithNumber<T> get() = WithNumber {
     GAP value "${(it * 0.25f)}rem"
   }
 
@@ -19,7 +19,7 @@ interface Gap<T> : KWScope<T> {
   /** column-gap: {number} * 0.25rem
    * - [documentation](https://tailwindcss.com/docs/gap)
    * */
-  val gap_x: WithFloatAndInt<T> get() = WithFloatAndInt {
+  val gap_x: WithNumber<T> get() = WithNumber {
     GAP_COLUMN value "${(it * 0.25f)}rem"
   }
 
@@ -27,7 +27,7 @@ interface Gap<T> : KWScope<T> {
   /** row-gap: {number} * 0.25rem
    * - [documentation](https://tailwindcss.com/docs/gap)
    * */
-  val gap_y: WithFloatAndInt<T> get() = WithFloatAndInt {
+  val gap_y: WithNumber<T> get() = WithNumber {
     GAP_ROW value "${(it * 0.25f)}rem"
   }
 

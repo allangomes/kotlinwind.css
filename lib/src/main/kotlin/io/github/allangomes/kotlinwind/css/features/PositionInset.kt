@@ -10,7 +10,7 @@ interface PositionInset<T> : KWScope<T> {
    * inset: {number} * 0.25rem;
    */
   @StyleValueMarker
-  val inset: WithFloatAndInt<T> get() = WithFloatAndInt {
+  val inset: WithNumber<T> get() = WithNumber {
     val value = it * 0.25
     INSET value "${value}rem"
   }
@@ -33,7 +33,7 @@ interface PositionInset<T> : KWScope<T> {
    * right: {number} * 0.25rem;
    */
   @StyleValueMarker
-  val inset_x: WithFloatAndInt<T> get() = WithFloatAndInt {
+  val inset_x: WithNumber<T> get() = WithNumber {
     val value = it * 0.25
     LEFT value "${value}rem"
     RIGHT value "${value}rem"
@@ -64,8 +64,8 @@ interface PositionInset<T> : KWScope<T> {
    * bottom: {number} * 0.25rem;
    */
   @StyleValueMarker
-  val inset_y: WithFloatAndInt<T>
-    get() = WithFloatAndInt {
+  val inset_y: WithNumber<T>
+    get() = WithNumber {
     val value = it * 0.25
     TOP value "${value}rem"
     BOTTOM value "${value}rem"
@@ -95,7 +95,7 @@ interface PositionInset<T> : KWScope<T> {
    * inset-inline-start: {number} * 0.25rem;
    */
   @StyleValueMarker
-  val start: WithFloatAndInt<T> get() = WithFloatAndInt {
+  val start: WithNumber<T> get() = WithNumber {
     val value = it * 0.25
     INSET_INLINE_START value "${value}rem"
   }
@@ -104,7 +104,7 @@ interface PositionInset<T> : KWScope<T> {
    * inset-inline-end: {number} * 0.25rem;
    */
   @StyleValueMarker
-  val end: WithFloatAndInt<T> get() = WithFloatAndInt {
+  val end: WithNumber<T> get() = WithNumber {
     val value = it * 0.25
     INSET_INLINE_END value "${value}rem"
   }

@@ -1,27 +1,41 @@
 import com.vanniktech.maven.publish.JavadocJar
-import com.vanniktech.maven.publish.KotlinJvm
+import com.vanniktech.maven.publish.KotlinMultiplatform
 import com.vanniktech.maven.publish.SonatypeHost
 
 plugins {
-    alias(libs.plugins.jvm)
+    alias(libs.plugins.kmp)
     alias(libs.plugins.dokka)
     alias(libs.plugins.publisher)
     alias(libs.plugins.kover)
 }
 
-dependencies {
-    testImplementation(kotlin("test"))
+kotlin {
+    jvm()
+    js {
+        nodejs {
+            testTask {
+                enabled = false // TODO: Make js tests work
+            }
+        }
+        binaries.library()
+    }
+
+    sourceSets {
+        commonMain.dependencies {}
+        commonTest.dependencies {
+            implementation(kotlin("test"))
+        }
+    }
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
 
 mavenPublishing {
-    configure(KotlinJvm(
-        javadocJar = JavadocJar.Dokka("dokkaHtml"),
-        sourcesJar = true,
-    ))
+    configure(
+        KotlinMultiplatform(
+            javadocJar = JavadocJar.Dokka("dokkaHtml"),
+            sourcesJar = true,
+        )
+    )
 
     coordinates(
         groupId = rootProject.group as String,

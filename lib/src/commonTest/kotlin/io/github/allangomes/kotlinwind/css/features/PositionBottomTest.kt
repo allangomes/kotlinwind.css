@@ -1,10 +1,12 @@
 package io.github.allangomes.kotlinwind.css.features
 
+import assertStringMatchesAny
 import io.github.allangomes.kotlinwind.css.KW
 import io.github.allangomes.kotlinwind.css.api.Style
 import io.github.allangomes.kotlinwind.css.core.BOTTOM
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.fail
 
 class PositionBottomTest {
 
@@ -17,16 +19,18 @@ class PositionBottomTest {
 
   @Test
   fun bottom_fraction() {
-    val expected = Style(BOTTOM, "25.0%").toString()
+    val expectedJvm = Style(BOTTOM, "25.0%").toString()
+    val expectedJs = Style(BOTTOM, "25%").toString()
     val returned = KW.inline { bottom_pct[1, 4] }
-    assertEquals(expected, returned)
+    assertStringMatchesAny(returned, expectedJvm, expectedJs)
   }
 
   @Test
   fun bottom_pct() {
-    val expected = Style(BOTTOM, "32.0%").toString()
+    val expectedJvm = Style(BOTTOM, "32.0%").toString()
+    val expectedJs = Style(BOTTOM, "32%").toString()
     val returned = KW.inline { bottom_pct[32] }
-    assertEquals(expected, returned)
+    assertStringMatchesAny(returned, expectedJvm, expectedJs)
   }
 
   @Test

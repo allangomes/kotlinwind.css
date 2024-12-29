@@ -12,11 +12,7 @@ plugins {
 kotlin {
     jvm()
     js {
-        nodejs {
-            testTask {
-                enabled = false // TODO: Make js tests work
-            }
-        }
+        nodejs()
         binaries.library()
     }
 

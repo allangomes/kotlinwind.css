@@ -1,5 +1,6 @@
 package io.github.allangomes.kotlinwind.css.features
 
+import assertStringMatchesAny
 import io.github.allangomes.kotlinwind.css.KW
 import io.github.allangomes.kotlinwind.css.api.Style
 import io.github.allangomes.kotlinwind.css.core.RIGHT
@@ -17,16 +18,18 @@ class PositionRightTest {
 
   @Test
   fun right_fraction() {
-    val expected = Style(RIGHT, "25.0%").toString()
+    val expectedJvm = Style(RIGHT, "25.0%").toString()
+    val expectedJs = Style(RIGHT, "25%").toString()
     val returned = KW.inline { right_pct[1, 4] }
-    assertEquals(expected, returned)
+    assertStringMatchesAny(returned, expectedJvm, expectedJs)
   }
 
   @Test
   fun right_pct() {
-    val expected = Style(RIGHT, "32.0%").toString()
+    val expectedJvm = Style(RIGHT, "32.0%").toString()
+    val expectedJs = Style(RIGHT, "32%").toString()
     val returned = KW.inline { right_pct[32] }
-    assertEquals(expected, returned)
+    assertStringMatchesAny(returned, expectedJvm, expectedJs)
   }
 
   @Test

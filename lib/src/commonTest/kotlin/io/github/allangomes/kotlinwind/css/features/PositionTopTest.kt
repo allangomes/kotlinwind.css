@@ -1,6 +1,5 @@
 package io.github.allangomes.kotlinwind.css.features
 
-import assertStringMatchesAny
 import io.github.allangomes.kotlinwind.css.KW
 import io.github.allangomes.kotlinwind.css.api.Style
 import io.github.allangomes.kotlinwind.css.core.TOP
@@ -18,18 +17,23 @@ class PositionTopTest {
 
   @Test
   fun top_fraction() {
-    val expectedJvm = Style(TOP, "25.0%").toString()
-    val expectedJs = Style(TOP, "25%").toString()
+    val expected = Style(TOP, "25%").toString()
     val returned = KW.inline { top_pct[1, 4] }
-    assertStringMatchesAny(returned, expectedJvm, expectedJs)
+    assertEquals(expected, returned)
+  }
+
+  @Test
+  fun top_fraction_with_decimal() {
+    val expected = Style(TOP, "33.333%").toString()
+    val returned = KW.inline { top_pct[1, 3] }
+    assertEquals(expected, returned)
   }
 
   @Test
   fun top_pct() {
-    val expectedJvm = Style(TOP, "32.0%").toString()
-    val expectedJs = Style(TOP, "32%").toString()
+    val expected = Style(TOP, "32%").toString()
     val returned = KW.inline { top_pct[32] }
-    assertStringMatchesAny(returned, expectedJvm, expectedJs)
+    assertEquals(expected, returned)
   }
 
   @Test

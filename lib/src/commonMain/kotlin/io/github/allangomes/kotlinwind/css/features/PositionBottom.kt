@@ -5,6 +5,7 @@ import io.github.allangomes.kotlinwind.css.core.BOTTOM
 import io.github.allangomes.kotlinwind.css.core.StyleValueMarker
 import io.github.allangomes.kotlinwind.css.core.WithNumber
 import io.github.allangomes.kotlinwind.css.core.WithPercentual
+import io.github.allangomes.kotlinwind.css.utils.normalizeDecimal
 
 @Suppress("PropertyName")
 interface PositionBottom<T> : KWScope<T> {
@@ -15,8 +16,8 @@ interface PositionBottom<T> : KWScope<T> {
   @StyleValueMarker
   val bottom: WithNumber<T>
     get() = WithNumber {
-      val value = it * 0.25
-      BOTTOM value "${value}rem"
+      val value = it * 0.25f
+      BOTTOM value "${normalizeDecimal(value)}rem"
     }
 
   /**
@@ -25,7 +26,7 @@ interface PositionBottom<T> : KWScope<T> {
   @StyleValueMarker
   val bottom_pct: WithPercentual<T>
     get() = WithPercentual {
-      BOTTOM value "$it%"
+      BOTTOM value "${normalizeDecimal(it)}%"
     }
 
   /**

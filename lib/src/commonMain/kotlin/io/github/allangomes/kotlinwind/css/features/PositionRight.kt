@@ -5,6 +5,7 @@ import io.github.allangomes.kotlinwind.css.core.RIGHT
 import io.github.allangomes.kotlinwind.css.core.StyleValueMarker
 import io.github.allangomes.kotlinwind.css.core.WithNumber
 import io.github.allangomes.kotlinwind.css.core.WithPercentual
+import io.github.allangomes.kotlinwind.css.utils.normalizeDecimal
 
 @Suppress("PropertyName")
 interface PositionRight<T> : KWScope<T> {
@@ -15,7 +16,7 @@ interface PositionRight<T> : KWScope<T> {
   @StyleValueMarker
   val right: WithNumber<T>
     get() = WithNumber {
-      val value = it * 0.25
+      val value = normalizeDecimal(it * 0.25f)
       RIGHT value "${value}rem"
     }
 
@@ -25,7 +26,7 @@ interface PositionRight<T> : KWScope<T> {
   @StyleValueMarker
   val right_pct: WithPercentual<T>
     get() = WithPercentual {
-      RIGHT value "$it%"
+      RIGHT value "${normalizeDecimal(it)}%"
     }
 
   /**

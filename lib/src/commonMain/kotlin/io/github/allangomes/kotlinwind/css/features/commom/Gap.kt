@@ -2,6 +2,7 @@ package io.github.allangomes.kotlinwind.css.features.commom
 
 import io.github.allangomes.kotlinwind.css.api.KWScope
 import io.github.allangomes.kotlinwind.css.core.*
+import io.github.allangomes.kotlinwind.css.utils.normalizeDecimal
 
 
 @Suppress("PropertyName")
@@ -12,7 +13,7 @@ interface Gap<T> : KWScope<T> {
    * - [documentation](https://tailwindcss.com/docs/gap)
    * */
   val gap: WithNumber<T> get() = WithNumber {
-    GAP value "${(it * 0.25f)}rem"
+    GAP value "${normalizeDecimal(it * 0.25f)}rem"
   }
 
   @StyleValueMarker
@@ -20,7 +21,7 @@ interface Gap<T> : KWScope<T> {
    * - [documentation](https://tailwindcss.com/docs/gap)
    * */
   val gap_x: WithNumber<T> get() = WithNumber {
-    GAP_COLUMN value "${(it * 0.25f)}rem"
+    GAP_COLUMN value "${normalizeDecimal(it * 0.25f)}rem"
   }
 
   @StyleValueMarker
@@ -28,7 +29,7 @@ interface Gap<T> : KWScope<T> {
    * - [documentation](https://tailwindcss.com/docs/gap)
    * */
   val gap_y: WithNumber<T> get() = WithNumber {
-    GAP_ROW value "${(it * 0.25f)}rem"
+    GAP_ROW value "${normalizeDecimal(it * 0.25f)}rem"
   }
 
 }

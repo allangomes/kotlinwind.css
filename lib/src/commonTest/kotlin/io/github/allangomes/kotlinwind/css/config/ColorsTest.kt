@@ -7,7 +7,7 @@ import kotlin.test.assertEquals
 class ColorsTest {
 
   @Test
-  fun `Change color`() {
+  fun change_color() {
     val expected = "RED_ALTER"
     Theme.color[RED.I50] = expected
     assertEquals(expected, Theme.color[RED.I50])

@@ -13,7 +13,7 @@ kotlin {
     jvm()
     js {
         nodejs()
-        binaries.library()
+        browser()
     }
 
     sourceSets {
@@ -68,7 +68,7 @@ mavenPublishing {
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
 
     // Enable GPG signing for all publications
-    signAllPublications()
+    // signAllPublications()
 }
 
 tasks.withType(Javadoc::class.java) {
